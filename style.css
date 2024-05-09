@@ -1,0 +1,286 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.home {
+    text-align: center;
+    height: 100vh;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    height: 11vh;
+}
+.logo a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 35px;
+    font-weight: 700;
+
+}
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.list li {
+    margin-right: 20px;
+}
+.list li:last-child {
+    margin-right: 0;
+}
+.list li a {
+    text-decoration: none;
+    color: #333;
+}
+.home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.image-container {
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 200px;
+    border-radius: 50%;
+    border: 4px solid rgba(0, 0, 0, 0.563);
+    box-shadow: 0px 0px 4px blue;
+}
+
+.content {
+    text-align: center;
+}
+.message {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.banner {
+    color: #007bff;
+}
+.headline {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.hire {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+}
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 40px 0;
+}
+
+.about-panel {
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    flex: 1;
+    margin-right: 80px;
+}
+
+.image img {
+    width: 250px;
+    height: auto;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.563);
+}
+
+.about-right {
+    flex: 2;
+    width: 450px;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-me {
+    font-size: 16px;
+}
+
+.project-section {
+    padding: 20px;
+}
+
+.project-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    margin: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px; /* Adjust width as needed */
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.title {
+    margin-bottom: 10px;
+}
+
+.contact-section {
+    padding: 50px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 5px 10px;
+    }
+
+    .logo a {
+        font-size: 20px;
+    }
+
+    .list li a {
+        font-size: 12px;
+    }
+
+    .about-panel {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .message {
+        font-size: 24px;
+    }
+
+    .headline {
+        font-size: 20px;
+    }
+
+    .hire {
+        font-size: 14px;
+    }
+
+    .about-section {
+        flex-direction: column;
+    }
+
+    .image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .image img {
+        width: 150px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .about-me {
+        font-size: 14px;
+    }
+
+    .about-right {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-form {
+        max-width: 100%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: calc(100% - 20px);
+    }
+}

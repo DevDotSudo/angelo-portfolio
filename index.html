@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Angelo Portfolio</title>
+</head>
+<body>
+    <div class="home" id="home">
+        <nav>
+            <div class="logo">
+                <a href="#home" class="logo">Angelo</a>
+            </div>
+            <ul class="list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="home-section">
+            <div class="image-container">
+                <img src="/images/picture.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3 class="message">
+                    Hi, I am <span class="banner">Angelo</span>
+                </h3>
+                <p class="headline">Web Developer</p>
+                <button class="hire">Hire Me</button>
+            </div>
+        </section>
+    </div>
+    <section class="about-section" id="about">
+        <div class="about-panel">
+            <div class="image">
+                <img src="/images/picture.jpg" alt="">
+            </div>
+            <div class="about-right">
+                <h3 class="title">About Me</h3>
+                <p class="about-me">
+                    Hello, fellow tech enthusiasts! I'm Angelo Grasparil Jr., a BSIT student at ISUFST, embarking on an exhilarating educational voyage to unlock the mysteries of Information Technology and its boundless possibilities.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="project-section" id="projects">
+        <h3 class="project-title">My Projects</h3>
+        <div class="project-container">
+            <div class="project">
+                <h2 class="title">T, V, A Tag</h2>
+                <img src="/images/table.jpg" alt="">
+            </div>
+            <div class="project">
+                <h2 class="title">Movie</h2>
+                <img src="/images/movie.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="contact-section" id="contact">
+        <h3 class="section-title">Contact Me</h3>
+        <form class="contact-form" action="#" method="post">
+            <div class="form-group">
+                <input type="text" id="name" name="name" required placeholder="Your name">
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" required placeholder="You email">
+            </div>
+            <div class="form-group">
+                <textarea id="message" name="message" rows="5" required placeholder="Your message"></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </section>        
+</body>
+</html>
